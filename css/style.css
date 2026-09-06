@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav > a {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+header nav a:hover {
+    opacity: 0.7;
+}
+
+#hero {
+    min-height:90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+#hero h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#hero > p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+#hero > a {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+#projects, #about, #contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+#about {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+#about h2 {
+    grid-column: 1 / -1;
+}
+
+#about h3 {
+    margin-top: 20px;
+}
+
+#contact-form {
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    font: inherit;
+}
+
+#contact-form button {
+    align-self: flex-start;
+
+    margin-top: 10px;
+    padding: 12px 30px;
+
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+
+    cursor: pointer;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+
+    border-top: 1px solid #e5e5e5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav {
+    display: flex;
+    gap: 20px;
+}
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#project-list article img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background-color: #eeeeee;
+}
+
+#project-list article h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+#project-list .technologies {
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
+#project-list article a {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#project-list article a:hover {
+    opacity: 0.7;
+}
+
+#project-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+#project-detail h1 {
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+#project-detail > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+#project-technologies {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#project-detail section {
+    padding: 50px 0;
+}
+
+#project-detail section h2 {
+    margin-bottom: 20px;
+}
+
+#project-description {
+    max-width: 750px;
+}
+
+.back-link {
+    font-weight: bold;
+}
+
+#project-github {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background-color: #1a1a1a;
+    color: white;
+
+    border-radius: 4px;
+}
+
+#project-github:hover,
+.back-link:hover {
+    opacity: 0.6;
+}
+
+.error-message {
+    min-height: 20px;
+    color: #b00020;
+    font-size: 0.9rem;
+}
+
+#form-success {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#visitor-settings {
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#visitor-settings input {
+    width: 250px;
+    max-width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #cccccc;
+    font: inherit;
+}
+
+#visitor-settings button {
+    padding: 10px 20px;
+
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+
+    cursor: pointer;
+}
+
+#personal-greeting {
+    min-height: 25px;
+    margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+
+    header nav {
+        padding: 20px;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    #hero {
+        min-height: 60vh;
+        padding: 60px 20px;
+    }
+
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+
+    #projects,
+    #about,
+    #contact {
+        padding: 60px 20px;
+    }
+
+    #project-list {
+        gap: 70px;
+    }
+
+    #about {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 40px;
+    }
+
+    #project-detail {
+        padding: 60px 20px;
+    }
+
+    #project-detail h1 {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    header nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav > a {
+        font-size: 1.1rem;
+    }
+
+    #hero {
+        min-height: auto;
+        padding: 70px 20px;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero > p:first-of-type {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    #hero > p:last-of-type {
+        font-size: 0.95rem;
+    }
+
+    #projects,
+    #about,
+    #contact {
+        padding: 50px 20px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    #project-list {
+        gap: 60px;
+    }
+
+    #project-list article h3 {
+        font-size: 1.5rem;
+    }
+
+    #project-list article img {
+        aspect-ratio: 16 / 9;
+    }
+
+    #about {
+        display: block;
+    }
+
+    #about h2 {
+        margin-bottom: 30px;
+    }
+
+    #about > div {
+        margin-bottom: 30px;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    #visitor-settings input {
+        width: 100%;
+    }
+
+    #project-detail {
+        padding: 50px 20px;
+    }
+
+    #project-detail h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    footer nav {
+        justify-content: center;
+    }
+}

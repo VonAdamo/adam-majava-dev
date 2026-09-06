@@ -1,0 +1,29 @@
+[
+    {
+        "id": "pulsehub",
+        "title": "PulseHub",
+        "description": "En chattapplikation byggd med en mikrotjänstarkitektur.",
+        "longDescription": "PulseHub är en chattapplikation uppbyggd med flera mikrotjänster. Projektet innehåller bland annat autentisering, användarprofiler, meddelandehantering och kommunikation via RabbitMQ.",
+        "technologies": "Java • Spring Boot • RabbitMQ • PostgreSQL",
+        "image": "images/pulsehub.png",
+        "github": "https://github.com/VonAdamo/PulseHub---frontend.git"
+    },
+    {
+        "id": "case-management",
+        "title": "Case Management System",
+        "description": "Ett internt ärendehanteringssystem för supportärenden.",
+        "longDescription": "Ett ärendehanteringssystem där användare kan skapa och hantera supportärenden, kommentarer och dokument. Projektet innehåller även filhantering via AWS S3.",
+        "technologies": "Java • Spring Boot • Thymeleaf • PostgreSQL • AWS S3",
+        "image": "images/case-management.png",
+        "github": "https://github.com/VonAdamo/case-management-system.git"
+    },
+    {
+        "id": "spring-movie",
+        "title": "Spring Movie App",
+        "description": "En webbapplikation för att hantera och söka efter filmer.",
+        "longDescription": "Spring Movie App är en webbapplikation byggd med Spring Boot och Thymeleaf. Användaren kan skapa, redigera, söka och ta bort filmer samt importera filmdata.",
+        "technologies": "Java • Spring Boot • Thymeleaf • PostgreSQL",
+        "image": "images/spring-movie-app.png",
+        "github": "https://github.com/VonAdamo/spring-movie-app.git"
+    }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Majava | Full Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""index.html">Adam Majava</a>
+            <ul>
+                <li><a href="#about">Om mig</a></li>
+                <li><a href="#projects">Projekt</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div id="visitor-settings">
+                <label for="visitor-name">Vad heter du?</label>
+                <input type="text" id="visitor-name" placeholder="Skriv ditt namn">
+                <button id="save-name" type="button">
+                    Spara namn
+                </button>
+                <p id="personal-greeting"></p>
+            </div>
+            <h1>Adam Majava</h1>
+            <h3>Full Stack Developer</h3>
+            <p>
+                Hej och välkommen till min portfolio! Jag är en passionerad 
+                fullstackutvecklare med erfarenhet av att bygga dynamiska och 
+                användarvänliga webbapplikationer.S
+            </p>
+            <a href="#projects">Mina projekt</a>
+        </section>
+        <section id="projects">
+            <h2>Utvalda projekt</h2>
+            <div id="project-list"></div>
+        </section>
+        <section id="about">
+            <h2>Om mig</h2>
+            <div>
+                <p> Kort presentation</p>
+                <h3>Tekniker</h3>
+                <p> HTML, CSS, JavaScript, React, Node.js, Express, MongoDB</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contact-form" novalidate>
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name">
+                <p class="error-message" id="name-error"></p>
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="email">
+                <p class="error-message" id="email-error"></p>
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message"></textarea>
+                <p class="error-message" id="message-error"></p>
+                <button type="submit">Skicka</button>
+                <p id="form-success"></p>
+            </form>
+        </section>
+    </main>
+<footer>
+    <p>© 2026 Adam Majava</p>
+    <nav>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </nav>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
